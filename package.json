@@ -14,11 +14,12 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*": "prettier --write --ignore-unknown"
+    "*": "prettier --write --ignore-unknown",
+    "*.{js,mjs,cjs,ts,mts,cts}": "eslint"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.63.0",
