@@ -27,5 +27,5 @@ the commit.
 | Day | Topic                           | Status |
 | --- | ------------------------------- | ------ |
 | 0   | Environment & CI setup          | ✅     |
-| 1   | Single Responsibility Principle | ⬜     |
+| 1   | Single Responsibility Principle | ✅     |
 | ... | ...                             | ...    |

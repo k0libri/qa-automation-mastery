@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUSKY: "0"
+      CUSTOMER_EMAIL: ${{ secrets.CUSTOMER_EMAIL }}
+      CUSTOMER_PASSWORD: ${{ secrets.CUSTOMER_PASSWORD }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
