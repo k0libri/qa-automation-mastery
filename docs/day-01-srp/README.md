@@ -58,4 +58,5 @@ Running 3 tests using 1 worker
   3 passed (2.7s)
 ```
 
-CI run: TODO
+CI run:
+https://github.com/k0libri/qa-automation-mastery/actions/runs/37773524312/job/113306556937
