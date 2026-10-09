@@ -28,4 +28,4 @@ the commit.
 | --- | ------------------------------- | ------ |
 | 0   | Environment & CI setup          | ✅     |
 | 1   | Single Responsibility Principle | ✅     |
-| ... | ...                             | ...    |
+| 2   | Open/Closed Principle           | ✅     |
