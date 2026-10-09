@@ -59,3 +59,6 @@ Running 6 tests using 4 workers
 
   6 passed (6.4s)
 ```
+
+CI run:
+https://github.com/k0libri/qa-automation-mastery/actions/runs/37929054375/job/113814967088
