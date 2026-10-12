@@ -11,3 +11,4 @@ Full explanation (why it's a problem, how I fixed it) is in the linked day doc.
 | 0   | Local hooks as the only quality gate | Validate in CI too, because local Git hooks can be skipped.                                               | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)    |
 | 0   | Unnecessary Git hooks in CI          | Use HUSKY=0 to skip hook activation while keeping explicit CI checks enabled.                             | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)    |
 | 1   | Assertions inside Page Objects       | Keep assertions in the test spec; Page Objects should expose locators and user actions.                   | [Day 1](docs/day-01-srp/README.md#anti-patterns-demonstrated) |
+| 2   | If/switch logic for page types       | Extend the shared base page instead of modifying conditional logic for each new page type.                | [Day 2](docs/day-02-ocp/README.md#anti-patterns-avoided)      |
