@@ -1,0 +1,4 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["day-03-lsp/**/*.ts"]
+}

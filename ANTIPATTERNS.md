@@ -3,12 +3,14 @@
 Quick index of anti-patterns identified/avoided during this learning journey.
 Full explanation (why it's a problem, how I fixed it) is in the linked day doc.
 
-| Day | Anti-pattern                         | Short description                                                                                         | Details                                                       |
-| --- | ------------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| 0   | Scattered test configuration         | Keep suite-specific URLs and settings in Playwright projects instead of repeating them across tests.      | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)    |
-| 0   | Forcing incompatible dependencies    | Choose supported versions instead of bypassing peer dependency checks with --force or --legacy-peer-deps. | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)    |
-| 0   | Rewriting source files in CI         | Check formatting in CI; apply formatting changes locally before committing.                               | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)    |
-| 0   | Local hooks as the only quality gate | Validate in CI too, because local Git hooks can be skipped.                                               | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)    |
-| 0   | Unnecessary Git hooks in CI          | Use HUSKY=0 to skip hook activation while keeping explicit CI checks enabled.                             | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)    |
-| 1   | Assertions inside Page Objects       | Keep assertions in the test spec; Page Objects should expose locators and user actions.                   | [Day 1](docs/day-01-srp/README.md#anti-patterns-demonstrated) |
-| 2   | If/switch logic for page types       | Extend the shared base page instead of modifying conditional logic for each new page type.                | [Day 2](docs/day-02-ocp/README.md#anti-patterns-avoided)      |
+| Day | Anti-pattern                         | Short description                                                                                         | Details                                                                      |
+| --- | ------------------------------------ | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| 0   | Scattered test configuration         | Keep suite-specific URLs and settings in Playwright projects instead of repeating them across tests.      | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)                   |
+| 0   | Forcing incompatible dependencies    | Choose supported versions instead of bypassing peer dependency checks with --force or --legacy-peer-deps. | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)                   |
+| 0   | Rewriting source files in CI         | Check formatting in CI; apply formatting changes locally before committing.                               | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)                   |
+| 0   | Local hooks as the only quality gate | Validate in CI too, because local Git hooks can be skipped.                                               | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)                   |
+| 0   | Unnecessary Git hooks in CI          | Use HUSKY=0 to skip hook activation while keeping explicit CI checks enabled.                             | [Day 0](docs/day-00-setup/README.md#anti-patterns-avoided)                   |
+| 1   | Assertions inside Page Objects       | Keep assertions in the test spec; Page Objects should expose locators and user actions.                   | [Day 1](docs/day-01-srp/README.md#anti-patterns-demonstrated)                |
+| 2   | If/switch logic for page types       | Extend the shared base page instead of modifying conditional logic for each new page type.                | [Day 2](docs/day-02-ocp/README.md#anti-patterns-avoided)                     |
+| 3   | Signature-incompatible override      | Do not add required parameters to an override when the base method does not require them.                 | [Day 3](docs/day-03-lsp/README.md#signature-incompatible-override)           |
+| 3   | Signature-compatible contract break  | Preserve the base method's behavior; a no-op override can let callers proceed before the page is ready.   | [Day 3](docs/day-03-lsp/README.md#signature-compatible-behavioral-violation) |
