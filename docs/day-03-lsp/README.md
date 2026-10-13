@@ -82,3 +82,6 @@ Running 8 tests using 5 workers
 
   8 passed (6.7s)
 ```
+
+CI run:
+https://github.com/k0libri/qa-automation-mastery/actions/runs/38366226569/job/115191907319
